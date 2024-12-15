@@ -321,3 +321,78 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
         }
        
       }
+
+        /* scale moblie */
+   @media screen  and (max-width: 1024px){
+    .band-name{
+        font-size: 2cm;
+        
+    }
+    .main-nav{
+        position: relative;
+        color: white;
+        padding-top: 2px; /* top pad */
+        text-align:  center;
+        font-size: 1cm;
+        font-weight:lighter;
+        border-bottom: 0.2px solid rgba(255, 255, 255, 0);
+    }
+    .main-header {
+        
+        height: 500px; 
+    
+        
+    }
+    .main-header::before{
+        height: 500px; 
+    }
+    .section-header{
+    
+        font-family: Taviraj;
+        font-weight: normal;
+        color: #fdfefe ;
+        text-align: center;
+        font-size: 1em;
+       padding: 20px;
+    }
+    
+    .about-band-image{
+        float: left;
+        height: 120px;
+        width: 120px;
+        margin: 5px;
+        border-radius: 30%;
+    }
+    .about-band-image1{
+        float: right;
+        height: 120px;
+        width: 120px;
+        margin: 5px;
+        border-radius: 30%;
+    }
+    .content-section {
+        margin: 0.4em;
+    }
+    .container{
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 0.2em;
+    }
+    .content-section{
+   
+        animation: appear linear;
+        animation-timeline: view();
+        /* ระยะfade*/
+        animation-range: entry 0% cover 20%;
+    }
+    .text2{
+        
+        white-space: pre-line;
+        margin: 2;
+        padding: 0.2em;
+    }
+    .pre-n{
+     font-size: 0.1em;
+     text-align:  left;
+    }
+}
