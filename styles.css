@@ -245,3 +245,79 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
     margin: 6px;
     border-radius: 40%;
   }
+
+  /* scale moblie */
+  @media screen  and (max-width: 500px){
+    .band-name{
+        font-size: 1cm;
+        
+    }
+    .main-nav{
+        position: relative;
+        color: white;
+        padding-top: 1px; /* top pad */
+        text-align:  center;
+        font-size: .3cm;
+        font-weight:lighter;
+        border-bottom: 0.1px solid rgba(255, 255, 255, 0);
+    }
+    .main-header {
+        
+        height: 400px; 
+    
+        
+    }
+    .main-header::before{
+        height: 400px; 
+    }
+    .section-header{
+    
+        font-family: Taviraj;
+        font-weight: normal;
+        color: #fdfefe ;
+        text-align: center;
+        font-size: 1em;
+       padding: 10px;
+    }
+    
+    .about-band-image{
+        float: left;
+        height: 120px;
+        width: 120px;
+        margin: 5px;
+        border-radius: 30%;
+    }
+    .about-band-image1{
+        float: right;
+        height: 120px;
+        width: 120px;
+        margin: 5px;
+        border-radius: 30%;
+    }
+    .content-section {
+        margin: 0.2em;
+    }
+    .container{
+        max-width: 420px;
+        margin: 0 auto;
+        padding: 0 0.2em;
+    }
+    .content-section{
+   
+        animation: appear linear;
+        animation-timeline: view();
+        /* ระยะfade*/
+        animation-range: entry 0% cover 15%;
+    }
+    .text2{
+        
+        white-space: pre-line;
+        margin: 2;
+        padding: 0.2em;
+    }
+    .pre-n{
+     font-size: 0.1em;
+     text-align:  left;
+    }
+   
+  }
