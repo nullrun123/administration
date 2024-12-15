@@ -325,15 +325,15 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
         /* scale moblie */
    @media screen  and (max-width: 1024px){
     .band-name{
-        font-size: 2cm;
+        font-size: 1.5cm;
         
     }
     .main-nav{
         position: relative;
         color: white;
-        padding-top: 2px; /* top pad */
+        padding-top:1.2px; /* top pad */
         text-align:  center;
-        font-size: 1cm;
+        font-size: 0.7cm;
         font-weight:lighter;
         border-bottom: 0.2px solid rgba(255, 255, 255, 0);
     }

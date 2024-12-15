@@ -344,7 +344,7 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
     .main-nav{
         position: relative;
         color: white;
-        padding-top: 2px; /* top pad */
+        padding-top: 1.2px; /* top pad */
         text-align:  center;
         font-size: 1cm;
         font-weight:lighter;
