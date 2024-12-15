@@ -378,8 +378,8 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
     }
     .about-band-image1{
         float: right;
-        height: 120px;
-        width: 120px;
+        height: 150px;
+        width: 150px;
         margin: 5px;
         border-radius: 30%;
     }
