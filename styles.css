@@ -333,7 +333,7 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
         color: white;
         padding-top: 2px; /* top pad */
         text-align:  center;
-        font-size: .8cm;
+        font-size: 1cm;
         font-weight:lighter;
         border-bottom: 0.2px solid rgba(255, 255, 255, 0);
     }
@@ -371,10 +371,10 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
         border-radius: 30%;
     }
     .content-section {
-        margin: 0.2em;
+        margin: 0.4em;
     }
     .container{
-        max-width: 800px;
+        max-width: 900px;
         margin: 0 auto;
         padding: 0 0.2em;
     }
@@ -383,7 +383,7 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
         animation: appear linear;
         animation-timeline: view();
         /* ระยะfade*/
-        animation-range: entry 0% cover 15%;
+        animation-range: entry 0% cover 20%;
     }
     .text2{
         
