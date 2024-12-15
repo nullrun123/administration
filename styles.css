@@ -95,7 +95,8 @@
     color:#3498db;
 }
 .html , body{
-    background-color: #424949 ;
+    background: rgb(99,99,115);
+background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, rgba(46,46,47,1) 100%);
     margin: 0;
     padding: 0;
 }
