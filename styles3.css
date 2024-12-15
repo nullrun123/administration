@@ -1,0 +1,246 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+
+    box-sizing : border-box;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+.band-name {
+    animation: slide-in 0.7s both;
+ 
+  }
+
+.fade{
+    animation: slide-in 0.7s both, color-change 1s 0.7s both;
+}
+  
+  
+@keyframes slide-in {
+    0% {
+      transform: translateY(-1000px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+@keyframes appear{
+            from{
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+            to{
+                opacity: 1;
+                transform: translateX(0px);
+            }
+        }
+.content-section{
+   
+            animation: appear linear;
+            animation-timeline: view();
+            /* ระยะfade*/
+            animation-range: entry 0% cover 40%;
+        }
+
+
+  @keyframes color-change {
+    0% { color: white; }
+    60% { color: white; }
+    100% { color:  #e74c3c  ; }
+
+  }
+
+
+
+.main-header {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-image: url("Images/king.png");
+    background-size: cover;
+    background-blend-mode: multiply;
+    padding-bottom: 50px;
+    color: black;
+    height: 550px; 
+
+    
+}
+.main-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("Images/king.png"); 
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px); 
+    z-index: 0; 
+}
+
+.main-header h1 {
+    padding: 120px 0;
+    position: relative;
+    z-index: 2; 
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding-top: 100px; /* จัดข้อความให้อยู่ตรงกลาง */
+}
+
+.strong-nav{
+    color:#3498db;
+}
+.html , body{
+    background-color: #424949 ;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul{
+    margin: 0;
+}
+
+.nav li {
+    display: inline;
+}
+
+.main-nav{
+    position: relative;
+    z-index: 2; /* index 2 */
+    color: white;
+
+    margin: 0;
+    padding-top: 10px; /* top pad */
+    text-align:  center;
+    font-size: .8cm;
+    font-weight:lighter;
+    border-bottom: 0.2px solid rgba(255, 255, 255, 0);
+   
+}
+
+.main-nav li{
+
+    padding: 0 2%;
+}
+.nav a:hover{
+    background-color: #b2babb ;
+}
+.nav a {
+    
+    display: inline-block;
+    padding: .5cm;
+    color : white;
+    text-decoration: none; /* under line */
+}
+
+
+/* Text main */
+.band-name {
+    text-align: center;
+    margin: 0;
+    font-size: 3.5cm;
+    font-family: Charm;
+    font-weight: normal;
+}
+
+/* text */
+.content-section {
+    margin: 1em;
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+
+.section-header{
+    
+    font-family: Taviraj;
+    font-weight: normal;
+    color: #fdfefe ;
+    text-align: center;
+    font-size: 2.5em;
+   padding: 50px;
+}
+
+.about-band-image{
+    float: left;
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+    border-radius: 40%;
+}
+.about-band-image1{
+    float: right;
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+    border-radius: 40%;
+}
+
+.p-nav {
+    margin: 1;
+}
+
+/*footer */
+.main-footer {
+    background-color: #3d3d3d;
+    color: white;
+    padding: 10px 0;
+    font-size: 0.9em; 
+    text-align: left;
+}
+
+.main-footer-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.band-footer {
+    margin: 0; 
+    font-size: 1.2em; 
+}
+
+.footer-nav {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-nav li {
+   
+    padding: 0 5px;
+}
+
+.footer-nav img {
+   
+    width: 40px;
+    height: 40px;
+   
+}
+
+/* */
+.block {
+    height: 13em;
+    line-height: 5em;
+    width: 22em;
+    background: #464646;
+    color: #fdfdfd;
+    text-align: center;
+    margin: 1em auto;
+    text-shadow: 0 0 1px #333; /* so one can see fadeBgColor properly */
+  }
+  .image {
+    float: center;
+    height: 30px;
+    width: 30px;
+    margin: 6px;
+    border-radius: 40%;
+  }
