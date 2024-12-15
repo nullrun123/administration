@@ -339,12 +339,12 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
     }
     .main-header {
         
-        height: 500px; 
+        height: 600px; 
     
         
     }
     .main-header::before{
-        height: 500px; 
+        height: 600px; 
     }
     .section-header{
     
@@ -353,7 +353,7 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
         color: #fdfefe ;
         text-align: center;
         font-size: 1em;
-       padding: 30px;
+       padding: 25px;
     }
     
     .about-band-image{
