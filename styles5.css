@@ -383,6 +383,13 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
         margin: 5px;
         border-radius: 30%;
     }
+    .about-band-image2{
+        float: right;
+        height: 200px;
+        width: 100px;
+        margin: 5px;
+        border-radius: 30%;
+    }
     .content-section {
         margin: 0.4em;
     }
