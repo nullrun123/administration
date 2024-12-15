@@ -247,7 +247,7 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
   }
 
   /* scale moblie */
-  @media screen  and (max-width: 600px){
+  @media screen  and (max-width: 700px){
     .band-name{
         font-size: 1cm;
         
