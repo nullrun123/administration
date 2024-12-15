@@ -333,18 +333,18 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
         color: white;
         padding-top: 1px; /* top pad */
         text-align:  center;
-        font-size: .3cm;
+        font-size: .5cm;
         font-weight:lighter;
         border-bottom: 0.1px solid rgba(255, 255, 255, 0);
     }
     .main-header {
         
-        height: 600px; 
+        height: 550px; 
     
         
     }
     .main-header::before{
-        height: 600px; 
+        height: 550px; 
     }
     .section-header{
     
