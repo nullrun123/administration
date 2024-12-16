@@ -596,7 +596,7 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
         }
       }
     .main-nav{
-        position: relative;
+        position: center;
         color: white;
         padding-top: 1px; /* top pad */
         text-align:  center;
