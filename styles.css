@@ -58,7 +58,7 @@
 .main-header {
     position: relative;
     background-color: rgba(0, 0, 0, 0.6);
-    background-image: url("Images/main1.jpg");
+    background-image: url("Images/ar.jpg");
     background-size: cover;
     background-blend-mode: multiply;
     padding-bottom: 50px;
@@ -74,7 +74,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url("Images/main1.jpg"); /* ใช้รูปภาพซ้ำ */
+    background-image: url("Images/ar.jpg"); /* ใช้รูปภาพซ้ำ */
     background-size: cover;
     background-position: center;
     filter: blur(5px); /* เบลอภาพ */
@@ -142,7 +142,6 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
 /* Text main */
 .band-name {
     text-align: center;
-    
     margin: 0;
     font-size: 3.5cm;
     font-family: Charm;
@@ -172,15 +171,15 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
 
 .about-band-image{
     float: left;
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
     margin: 10px;
     border-radius: 40%;
 }
 .about-band-image1{
     float: right;
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
     margin: 10px;
     border-radius: 40%;
 }
@@ -246,6 +245,7 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
     margin: 6px;
     border-radius: 40%;
   }
+
 
   /* scale moblie */
   @media screen  and (max-width: 800px){
