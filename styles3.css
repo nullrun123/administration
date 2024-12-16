@@ -584,7 +584,7 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
     /* scale moblie */
 @media screen  and (max-width: 453px){
     .band-name{
-        font-size: 0.8cm;
+        font-size: 0.85cm;
         
     }
     @keyframes slide-in {
@@ -592,7 +592,7 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
           transform: translateY(-1000px);
         }
         100% {
-          transform: translateY(-20px);
+          transform: translateY(-10px);
         }
       }
     .main-nav{
@@ -600,7 +600,7 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
         color: white;
         padding-top: 1px; /* top pad */
         text-align:  center;
-        font-size: .45cm;
+        font-size: .4cm;
         font-weight:lighter;
         border-bottom: 0.2px solid rgba(255, 255, 255, 0);
     }
