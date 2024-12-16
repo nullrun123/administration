@@ -455,7 +455,7 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
         border-bottom: .7px solid rgba(255, 255, 255, 0);
     }
     .main-header {
-        
+        width: 420px;
         height: 500px; 
     
         
@@ -625,7 +625,7 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
         
     }
     .main-header {
-        width: 440px;
+        width: 450px;
         height: 500px; 
     
         
