@@ -247,7 +247,7 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
   }
 
   /* scale moblie */
-  @media screen  and (max-width: 800px){
+  @media screen  and (max-width:800px){
     .band-name{
         font-size: 1cm;
         
@@ -322,20 +322,45 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
    
   }
 
-  /* scale moblie */
-@media screen  and (max-width: 1024px){
+
+/* scale moblie */
+@media screen  and (max-width: 533px){
     .band-name{
-        font-size: 2cm;
+        
+        margin-top: -20px; /* ปรับเป็นค่าที่เหมาะสม */
+        font-size: 1.7cm;
+        margin: 0 auto;
+        
+        
+    }
+    @keyframes slide-in {
+        0% {
+          transform: translateY(-1000px);
+        }
+        100% {
+          transform: translateY(-200px);
+        }
+      }
+    .main-header {
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.6);
+        background-image: url("Images/main1.jpg");
+        background-size: cover;
+        background-blend-mode: multiply;
+        padding-bottom: 2px;
+        color: black;
+        height: 90px; 
+    
         
     }
     .main-nav{
         position: relative;
         color: white;
-        padding-top: 2px; /* top pad */
+        padding-top: .05px; /* top pad */
         text-align:  center;
-        font-size: 1cm;
+        font-size: .2cm;
         font-weight:lighter;
-        border-bottom: 0.2px solid rgba(255, 255, 255, 0);
+        border-bottom: .7px solid rgba(255, 255, 255, 0);
     }
     .main-header {
         
@@ -352,8 +377,8 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
         font-weight: normal;
         color: #fdfefe ;
         text-align: center;
-        font-size: 1em;
-       padding: 20px;
+        font-size: .75em;
+       padding: 10px;
     }
     
     .about-band-image{
@@ -374,7 +399,7 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
         margin: 0.4em;
     }
     .container{
-        max-width: 900px;
+        max-width: 800px;
         margin: 0 auto;
         padding: 0 0.2em;
     }
@@ -392,10 +417,13 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
         padding: 0.2em;
     }
     .pre-n{
-     font-size: 0.1em;
+     font-size: 1em;
      text-align:  left;
     }
 }
+
+
+
 /* scale moblie */
 @media screen  and (max-width: 1100px){
     .band-name{
