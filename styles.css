@@ -416,7 +416,7 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
 
 
    /* scale moblie */
-   @media screen  and (max-width: 520px){
+   @media screen  and (max-width: 533px){
     .band-name{
         
         margin-top: -20px; /* ปรับเป็นค่าที่เหมาะสม */
@@ -430,7 +430,7 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
           transform: translateY(-1000px);
         }
         100% {
-          transform: translateY(-55px);
+          transform: translateY(-200px);
         }
       }
     .main-header {
@@ -450,7 +450,7 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
         color: white;
         padding-top: .05px; /* top pad */
         text-align:  center;
-        font-size: .4cm;
+        font-size: .2cm;
         font-weight:lighter;
         border-bottom: .7px solid rgba(255, 255, 255, 0);
     }
@@ -516,90 +516,6 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
 
 
 
-
-/* scale moblie */
-@media screen  and (max-width: 430px){
-    .band-name{
-        font-size: 1.2cm;
-        
-    }
-    @keyframes slide-in {
-        0% {
-          transform: translateY(-1000px);
-        }
-        100% {
-          transform: translateY(-10px);
-        }
-      }
-    .main-nav{
-        position: relative;
-        color: white;
-        padding-top: 1px; /* top pad */
-        text-align:  center;
-        font-size: .6cm;
-        font-weight:lighter;
-        border-bottom: 0.2px solid rgba(255, 255, 255, 0);
-    }
-    .main-header {
-        
-        height: 500px; 
-    
-        
-    }
-    .main-header::before{
-        height: 500px; 
-    }
-    .section-header{
-    
-        font-family: Taviraj;
-        font-weight: normal;
-        color: #fdfefe ;
-        text-align: center;
-        font-size: 1em;
-       padding: 20px;
-    }
-    
-    .about-band-image{
-        float: left;
-        height: 120px;
-        width: 120px;
-        margin: 5px;
-        border-radius: 30%;
-    }
-    .about-band-image1{
-        float: right;
-        height: 120px;
-        width: 120px;
-        margin: 5px;
-        border-radius: 30%;
-    }
-    .content-section {
-        margin: 0.4em;
-    }
-    .container{
-        max-width: 900px;
-        margin: 0 auto;
-        padding: 0 0.2em;
-    }
-    .content-section{
-   
-        animation: appear linear;
-        animation-timeline: view();
-        /* ระยะfade*/
-        animation-range: entry 0% cover 20%;
-    }
-    .text2{
-        
-        white-space: pre-line;
-        margin: 2;
-        padding: 0.2em;
-    }
-    .pre-n{
-        font-size: 1em;
-        text-align:  left;
-       }
-}
-
 /* scale moblie */
 @media screen  and (max-width: 1100px){
     .band-name{
@@ -611,7 +527,7 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
           transform: translateY(-1000px);
         }
         100% {
-          transform: translateY(-20px);
+          transform: translateY(-10px);
         }
       }
     .main-nav{
@@ -681,11 +597,12 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
         font-size: 1em;
         text-align:  left;
        }
-}
-/* scale moblie */
-@media screen  and (max-width: 764px){
+    }
+
+    /* scale moblie */
+@media screen  and (max-width: 453px){
     .band-name{
-        font-size: 1.9cm;
+        font-size: 1cm;
         
     }
     @keyframes slide-in {
@@ -693,7 +610,7 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
           transform: translateY(-1000px);
         }
         100% {
-          transform: translateY(-10px);
+          transform: translateY(-20px);
         }
       }
     .main-nav{
@@ -701,7 +618,7 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
         color: white;
         padding-top: 1px; /* top pad */
         text-align:  center;
-        font-size: .6cm;
+        font-size: .45cm;
         font-weight:lighter;
         border-bottom: 0.2px solid rgba(255, 255, 255, 0);
     }
@@ -763,4 +680,4 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
         font-size: 1em;
         text-align:  left;
        }
-}
+    }
