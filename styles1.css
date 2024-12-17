@@ -37,14 +37,25 @@
                 transform: translateX(0px);
             }
         }
-.content-section{
-   
-            animation: appear linear;
-            animation-timeline: view();
-            /* ระยะfade*/
-            animation-range: entry 0% cover 40%;
+        @keyframes my_animation {
+            from {
+                left: -300px;
+                opacity: 0
+            }
+        
+            to {
+                left: 0;
+                opacity: 1
+            }
         }
+        
+.content-section{
+    position: relative;
+    animation: my_animation 1s;
+    animation-fill-mode: both;
 
+          
+        }
 
   @keyframes color-change {
     0% { color: white; }
@@ -302,13 +313,7 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
         margin: 0 auto;
         padding: 0 0.2em;
     }
-    .content-section{
-   
-        animation: appear linear;
-        animation-timeline: view();
-        /* ระยะfade*/
-        animation-range: entry 0% cover 15%;
-    }
+
     .text2{
         
         white-space: pre-line;
@@ -403,13 +408,7 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
         margin: 0 auto;
         padding: 0 0.2em;
     }
-    .content-section{
    
-        animation: appear linear;
-        animation-timeline: view();
-        /* ระยะfade*/
-        animation-range: entry 0% cover 20%;
-    }
     .text2{
         
         white-space: pre-line;
@@ -488,13 +487,7 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
         margin: 0 auto;
         padding: 0 0.2em;
     }
-    .content-section{
-   
-        animation: appear linear;
-        animation-timeline: view();
-        /* ระยะfade*/
-        animation-range: entry 0% cover 20%;
-    }
+
     .text2{
         
         white-space: pre-line;
@@ -571,13 +564,7 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
         margin: 0 auto;
         padding: 0 0.2em;
     }
-    .content-section{
    
-        animation: appear linear;
-        animation-timeline: view();
-        /* ระยะfade*/
-        animation-range: entry 0% cover 20%;
-    }
     .text2{
         
         white-space: pre-line;
@@ -589,3 +576,78 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
         text-align:  left;
        }
     }
+    @media screen  and (max-width: 700px){
+        .band-name{
+            font-size: 1cm;
+            
+        }
+        @keyframes slide-in {
+            0% {
+              transform: translateY(-1000px);
+            }
+            100% {
+              transform: translateY(-1px);
+            }
+          }
+        .main-nav{
+            position: relative;
+            color: white;
+            padding-top: 1px; /* top pad */
+            text-align:  center;
+            font-size: .35cm;
+            font-weight:lighter;
+            border-bottom: 0.2px solid rgba(255, 255, 255, 0);
+        }
+        .main-header {
+            
+            height: 500px; 
+        
+            
+        }
+        .main-header::before{
+            height: 500px; 
+        }
+        .section-header{
+        
+            font-family: Taviraj;
+            font-weight: normal;
+            color: #fdfefe ;
+            text-align: center;
+            font-size: 1em;
+           padding: 20px;
+        }
+        
+        .about-band-image{
+            float: left;
+            height: 120px;
+            width: 120px;
+            margin: 5px;
+            border-radius: 30%;
+        }
+        .about-band-image1{
+            float: right;
+            height: 120px;
+            width: 120px;
+            margin: 5px;
+            border-radius: 30%;
+        }
+        .content-section {
+            margin: 0.4em;
+        }
+        .container{
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 0.2em;
+        }
+       
+        .text2{
+            
+            white-space: pre-line;
+            margin: 2;
+            padding: 0.2em;
+        }
+        .pre-n{
+            font-size: 1em;
+            text-align:  left;
+           }
+        }

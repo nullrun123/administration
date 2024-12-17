@@ -27,6 +27,7 @@
       transform: translateY(0);
     }
   }
+
 @keyframes appear{
             from{
                 opacity: 0;
@@ -37,12 +38,26 @@
                 transform: translateX(0px);
             }
         }
+
+
+        @keyframes my_animation {
+            from {
+                left: -300px;
+                opacity: 0
+            }
+        
+            to {
+                left: 0;
+                opacity: 1
+            }
+        }
+        
 .content-section{
-   
-            animation: appear linear;
-            animation-timeline: view();
-            /* ระยะfade*/
-            animation-range: entry 0% cover 40%;
+    position: relative;
+    animation: my_animation 1s;
+    animation-fill-mode: both;
+
+          
         }
 
 
@@ -74,11 +89,11 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url("Images/main1.jpg"); /* ใช้รูปภาพซ้ำ */
+    background-image: url("Images/main1.jpg");
     background-size: cover;
     background-position: center;
-    filter: blur(5px); /* เบลอภาพ */
-    z-index: 0; /* ให้อยู่ด้านล่างของข้อความ */
+    filter: blur(5px);
+    z-index: 0; 
 }
 
 .main-header h1 {
@@ -246,103 +261,88 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
     border-radius: 40%;
   }
 
-
-  /* scale moblie */
-  @media screen  and (max-width: 800px){
-    .band-name{
-        font-size: 1cm;
-        
-    }
-    .main-nav{
-        position: relative;
-        color: white;
-        padding-top: 1px; /* top pad */
-        text-align:  center;
-        font-size: .3cm;
-        font-weight:lighter;
-        border-bottom: 0.1px solid rgba(255, 255, 255, 0);
-    }
-    .main-header {
-        
-        height: 400px; 
-    
-        
-    }
-    .main-header::before{
-        height: 400px; 
-    }
-    .section-header{
-    
-        font-family: Taviraj;
-        font-weight: normal;
-        color: #fdfefe ;
-        text-align: center;
-        font-size: 1em;
-       padding: 30px;
-    }
-    
-    .about-band-image{
-        float: left;
-        height: 120px;
-        width: 120px;
-        margin: 5px;
-        border-radius: 30%;
-    }
-    .about-band-image1{
-        float: right;
-        height: 120px;
-        width: 120px;
-        margin: 5px;
-        border-radius: 30%;
-    }
-    .content-section {
-        margin: 0.2em;
-    }
-    .container{
-        max-width: 420px;
-        margin: 0 auto;
-        padding: 0 0.2em;
-    }
-    .content-section{
-   
-        animation: appear linear;
-        animation-timeline: view();
-        /* ระยะfade*/
-        animation-range: entry 0% cover 15%;
-    }
-    .text2{
-        
-        white-space: pre-line;
-        margin: 2;
-        padding: 0.2em;
-    }
-    .pre-n{
-        font-size: 1em;
-        text-align:  left;
-       }
-   
-  }
-
-   /* scale moblie */
-   @media screen  and (max-width: 1024px){
-    .band-name{
-        font-size: 1.75cm;
-        
-    }
-    @keyframes slide-in {
-        0% {
-          transform: translateY(-1000px);
+    /* scale moblie */
+    @media screen  and (max-width: 800px){
+        .band-name{
+            font-size: 1cm;
+            
         }
-        100% {
-          transform: translateY(-20px);
+        .main-nav{
+            position: relative;
+            color: white;
+            padding-top: 1px; /* top pad */
+            text-align:  center;
+            font-size: .3cm;
+            font-weight:lighter;
+            border-bottom: 0.1px solid rgba(255, 255, 255, 0);
         }
+        .main-header {
+            
+            height: 400px; 
+        
+            
+        }
+        .main-header::before{
+            height: 400px; 
+        }
+        .section-header{
+        
+            font-family: Taviraj;
+            font-weight: normal;
+            color: #fdfefe ;
+            text-align: center;
+            font-size: 1em;
+           padding: 30px;
+        }
+        
+        .about-band-image{
+            float: left;
+            height: 120px;
+            width: 120px;
+            margin: 5px;
+            border-radius: 30%;
+        }
+        .about-band-image1{
+            float: right;
+            height: 120px;
+            width: 120px;
+            margin: 5px;
+            border-radius: 30%;
+        }
+        .content-section {
+            margin: 0.2em;
+        }
+        .container{
+            max-width: 420px;
+            margin: 0 auto;
+            padding: 0 0.2em;
+        }
+    
+        .text2{
+            
+            white-space: pre-line;
+            margin: 2;
+            padding: 0.2em;
+        }
+        .pre-n{
+         font-size: 0.1em;
+         text-align:  left;
+        }
+       
       }
+
+        /* scale moblie */
+@media screen  and (max-width: 1024px){
+    .band-name{
+        font-size: 2cm;
+        
+    }
     .main-nav{
         position: relative;
         color: white;
-        padding-top: 1px; /* top pad */
+        padding-top: 2px; /* top pad */
         text-align:  center;
-        font-size: .75cm;
+        font-size: 1cm;
         font-weight:lighter;
         border-bottom: 0.2px solid rgba(255, 255, 255, 0);
     }
@@ -387,13 +387,7 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
         margin: 0 auto;
         padding: 0 0.2em;
     }
-    .content-section{
-   
-        animation: appear linear;
-        animation-timeline: view();
-        /* ระยะfade*/
-        animation-range: entry 0% cover 20%;
-    }
+
     .text2{
         
         white-space: pre-line;
@@ -401,22 +395,14 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
         padding: 0.2em;
     }
     .pre-n{
-        font-size: 1em;
-        text-align:  left;
-       }
+     font-size: 0.1em;
+     text-align:  left;
+    }
 }
 
 
-
-
-
-
-
-
-
-
-   /* scale moblie */
-   @media screen  and (max-width: 533px){
+/* scale moblie */
+@media screen  and (max-width: 533px){
     .band-name{
         
         margin-top: -20px; /* ปรับเป็นค่าที่เหมาะสม */
@@ -455,7 +441,7 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
         border-bottom: .7px solid rgba(255, 255, 255, 0);
     }
     .main-header {
-        width: 420px;
+        
         height: 500px; 
     
         
@@ -495,13 +481,7 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
         margin: 0 auto;
         padding: 0 0.2em;
     }
-    .content-section{
-   
-        animation: appear linear;
-        animation-timeline: view();
-        /* ระยะfade*/
-        animation-range: entry 0% cover 20%;
-    }
+
     .text2{
         
         white-space: pre-line;
@@ -580,13 +560,7 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
         margin: 0 auto;
         padding: 0 0.2em;
     }
-    .content-section{
-   
-        animation: appear linear;
-        animation-timeline: view();
-        /* ระยะfade*/
-        animation-range: entry 0% cover 20%;
-    }
+  
     .text2{
         
         white-space: pre-line;
@@ -602,7 +576,7 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
     /* scale moblie */
 @media screen  and (max-width: 453px){
     .band-name{
-        font-size: 1cm;
+        font-size: 0.8cm;
         
     }
     @keyframes slide-in {
@@ -621,11 +595,9 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
         font-size: .45cm;
         font-weight:lighter;
         border-bottom: 0.2px solid rgba(255, 255, 255, 0);
-
-        
     }
     .main-header {
-        width: 450px;
+        
         height: 500px; 
     
         
@@ -661,19 +633,11 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
         margin: 0.4em;
     }
     .container{
-        
-        text-align: center;
-        max-width: 850px;
-        margin: 0;
-        padding: 0 0.1em;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 0.2em;
     }
-    .content-section{
-   
-        animation: appear linear;
-        animation-timeline: view();
-        /* ระยะfade*/
-        animation-range: entry 0% cover 10%;
-    }
+ 
     .text2{
         
         white-space: pre-line;
@@ -685,3 +649,78 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
         text-align:  left;
        }
     }
+    @media screen  and (max-width: 700px){
+        .band-name{
+            font-size: 1cm;
+            
+        }
+        @keyframes slide-in {
+            0% {
+              transform: translateY(-1000px);
+            }
+            100% {
+              transform: translateY(-1px);
+            }
+          }
+        .main-nav{
+            position: relative;
+            color: white;
+            padding-top: 1px; /* top pad */
+            text-align:  center;
+            font-size: .35cm;
+            font-weight:lighter;
+            border-bottom: 0.2px solid rgba(255, 255, 255, 0);
+        }
+        .main-header {
+            
+            height: 500px; 
+        
+            
+        }
+        .main-header::before{
+            height: 500px; 
+        }
+        .section-header{
+        
+            font-family: Taviraj;
+            font-weight: normal;
+            color: #fdfefe ;
+            text-align: center;
+            font-size: 1em;
+           padding: 20px;
+        }
+        
+        .about-band-image{
+            float: left;
+            height: 120px;
+            width: 120px;
+            margin: 5px;
+            border-radius: 30%;
+        }
+        .about-band-image1{
+            float: right;
+            height: 120px;
+            width: 120px;
+            margin: 5px;
+            border-radius: 30%;
+        }
+        .content-section {
+            margin: 0.4em;
+        }
+        .container{
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 0.2em;
+        }
+       
+        .text2{
+            
+            white-space: pre-line;
+            margin: 2;
+            padding: 0.2em;
+        }
+        .pre-n{
+            font-size: 1em;
+            text-align:  left;
+           }
+        }
