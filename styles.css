@@ -268,6 +268,27 @@ background: linear-gradient(180deg, rgba(99,99,115,1) 0%, rgba(42,42,46,1) 52%, 
     margin: auto;
   }
 
+  table{
+    width: 600px;
+   
+  }
+  th, caption{
+    text-align: left;
+  }
+
+  table, th , td{
+    border: 1px solid white;
+    border-collapse: collapse;
+  }
+  th , td{
+    padding: 10px;
+  }
+tr:nth-child(even){
+    background-color: #303030;
+}
+tr:nth-child(odd){
+    background-color: #7a7a7a;
+}
     /* scale moblie */
     @media screen  and (max-width: 800px){
         .band-name{
