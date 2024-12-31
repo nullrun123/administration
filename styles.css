@@ -58,7 +58,7 @@
     animation-fill-mode: both;
     background-color: #3b3944;
     background-size: cover;
-    border-radius: 7em;
+    border-radius: 5em;
 
           
         }
@@ -429,6 +429,30 @@ tr:nth-child(odd){
      font-size: 0.1em;
      text-align:  left;
     }
+    table{
+        width: 800px;
+        margin: auto;
+        width: 50%;
+        border: 3px solid green;
+        padding: 10px;
+      }
+      th, caption{
+        text-align: left;
+      }
+    
+      table, th , td{
+        border: 1px solid white;
+        border-collapse: collapse;
+      }
+      th , td{
+        padding: 10px;
+      }
+    tr:nth-child(even){
+        background-color: #303030;
+    }
+    tr:nth-child(odd){
+        background-color: #7a7a7a;
+    }
 }
 
 
@@ -523,12 +547,37 @@ tr:nth-child(odd){
      font-size: 1em;
      text-align:  left;
     }
+
+    table{
+        width: 400px;
+        margin: auto;
+        width: 50%;
+        border: 3px solid green;
+        padding: 10px;
+      }
+      th, caption{
+        text-align: left;
+      }
+    
+      table, th , td{
+        border: 1px solid white;
+        border-collapse: collapse;
+      }
+      th , td{
+        padding: 5px;
+      }
+    tr:nth-child(even){
+        background-color: #303030;
+    }
+    tr:nth-child(odd){
+        background-color: #7a7a7a;
+    }
 }
 
 
 
 /* scale moblie */
-@media screen  and (max-width: 1100px){
+@media screen  and (min-width: 992px) and (max-width:1199px){
     .band-name{
         font-size: 1.9cm;
         
@@ -602,6 +651,30 @@ tr:nth-child(odd){
         font-size: 1em;
         text-align:  left;
        }
+       table{
+        width: 600px;
+        margin: auto;
+        width: 50%;
+        border: 3px solid green;
+        padding: 10px;
+      }
+      th, caption{
+        text-align: left;
+      }
+    
+      table, th , td{
+        border: 1px solid white;
+        border-collapse: collapse;
+      }
+      th , td{
+        padding: 5px;
+      }
+    tr:nth-child(even){
+        background-color: #303030;
+    }
+    tr:nth-child(odd){
+        background-color: #7a7a7a;
+    }
     }
 
     /* scale moblie */
@@ -680,6 +753,31 @@ tr:nth-child(odd){
         font-size: 1em;
         text-align:  left;
        }
+
+       table{
+        width: 200px;
+        margin: auto;
+        width: 40%;
+        border: 3px solid green;
+        padding: 10px;
+      }
+      th, caption{
+        text-align: left;
+      }
+    
+      table, th , td{
+        border: 1px solid white;
+        border-collapse: collapse;
+      }
+      th , td{
+        padding: 4px;
+      }
+    tr:nth-child(even){
+        background-color: #303030;
+    }
+    tr:nth-child(odd){
+        background-color: #7a7a7a;
+    }
     }
 
     @media screen  and (max-width: 700px){
@@ -756,4 +854,31 @@ tr:nth-child(odd){
             font-size: 1em;
             text-align:  left;
            }
-        }
+        
+
+        
+  table{
+    width: 400px;
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+  }
+  th, caption{
+    text-align: left;
+  }
+
+  table, th , td{
+    border: 1px solid white;
+    border-collapse: collapse;
+  }
+  th , td{
+    padding: 5px;
+  }
+tr:nth-child(even){
+    background-color: #303030;
+}
+tr:nth-child(odd){
+    background-color: #7a7a7a;
+}
+    }
