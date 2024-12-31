@@ -56,6 +56,9 @@
     position: relative;
     animation: my_animation 1s;
     animation-fill-mode: both;
+    background-color: #3b3944;
+    background-size: cover;
+    border-radius: 7em;
 
           
         }
